@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will be replaced.
+  </div>
+  <script>
+    //Incorrect way to select an element by ID that causes a bug in some browsers
+    document.getElementByIdx("myDiv").innerHTML = "This is the new text.";
+  </script>
+</body>
+</html>
